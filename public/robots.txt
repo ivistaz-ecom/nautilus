@@ -1,0 +1,8 @@
+# Block all crawlers for /accounts
+User-agent: *
+Disallow: /signature-images
+
+
+# Allow all crawlers
+User-agent: *
+allow: /
