@@ -18,7 +18,7 @@ jobs:
                 passphrase: ${{ secrets.SSH_PASS }} # Your server's SSH password
       
                 script: |
-                  cd /var/www/html/stagingnautilusshipping
+                  cd /var/www/html/react/nautilusshipping
                   git pull origin main
                   npm install
                   npm run build
