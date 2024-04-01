@@ -8,10 +8,12 @@ jobs:
         runs-on: ubuntu-latest
         environment: Staging
         steps:
-            - name: Deploy nautilus App
-              uses: appleboy/ssh-action@master
+            - name: Repository checkout
+              uses: actions/checkout@v2
+            - name: Connects to VPS via SSH
+              uses: appleboy/ssh-action@v0.1.3
 
-              env:
+              with:
                 host: ${{ secrets.SSH_HOST }} # Your server's IP address
                 username: ${{ secrets.SSH_USERNAME }} # Your server's username
                 key: ${{ secrets.SSH_KEY }} # Your server's SSH private key
