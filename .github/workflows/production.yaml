@@ -11,7 +11,7 @@ jobs:
             - name: Deploy nautilus App
               uses: appleboy/ssh-action@master
 
-              env:
+              with:
                 host: ${{ secrets.SSH_HOST }} # Your server's IP address
                 username: ${{ secrets.SSH_USERNAME }} # Your server's username
                 key: ${{ secrets.SSH_KEY }} # Your server's SSH private key
