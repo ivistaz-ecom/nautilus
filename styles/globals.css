@@ -131,6 +131,36 @@ li a{
     background-size: cover;
 }
 
+.home-banner-career {
+    height: 561px;
+    width: 100%;
+    /* background: url('/images/career-banner.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row; */
+}
+
+.ban-text-career {
+    color: white;
+    line-height: 35px;
+    padding-right: 100px;
+    line-height: 54px;
+}
+
+.ban-text-career p {
+    font-size: 18px;
+    color: #555;
+    line-height: 28px;
+}
+
+.home-banner-career p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
 .ban-text {
     height: 480px !important;
     display: flex;
