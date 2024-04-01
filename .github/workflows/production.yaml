@@ -8,20 +8,18 @@ jobs:
         runs-on: ubuntu-latest
         environment: Production
         steps:
-          - name: Repository checkout
-            uses: actions/checkout@v2
-          - name: Connects to VPS via SSH
-            uses: appleboy/ssh-action@v0.1.3
+            - name: Deploy nautilus App
+              uses: appleboy/ssh-action@master
 
-            with:
-              host: ${{ secrets.SSH_HOST }} # Your server's IP address
-              username: ${{ secrets.SSH_USERNAME }} # Your server's username
-              key: ${{ secrets.SSH_KEY }} # Your server's SSH private key
-              passphrase: ${{ secrets.SSH_PASS }} # Your server's SSH password
-    
-              script: |
-                cd /var/www/html/nautillus
-                git pull origin main
-                npm install
-                npm run build
-                sudo pm2 restart nautillus
+              with:
+                host: ${{ secrets.SSH_HOST }} # Your server's IP address
+                username: ${{ secrets.SSH_USERNAME }} # Your server's username
+                key: ${{ secrets.SSH_KEY }} # Your server's SSH private key
+                passphrase: ${{ secrets.SSH_PASS }} # Your server's SSH password
+      
+                script: |
+                  cd /var/www/html/nautillus
+                  git pull origin main
+                  npm install
+                  npm run build
+                  sudo pm2 restart nautillus
