@@ -9,7 +9,7 @@ jobs:
         environment: Staging
         steps:
             - name: Deploy nautilus App
-              uses: appleboy/ssh-action@master
+              uses: appleboy/ssh-action@v1.0.3
 
               with:
                 host: ${{ secrets.SSH_HOST }} # Your server's IP address
