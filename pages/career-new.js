@@ -7,6 +7,7 @@ import configData from "../config.json";
 import { format } from 'date-fns'
 import Head from 'next/head'
 import PostList from '../utils/PostListCareer';
+import CareerFormNew from '../utils/CareerFormNew';
 
 const NewCareer = () => {
 
@@ -67,38 +68,7 @@ const NewCareer = () => {
                             <p>Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates.</p>
                             <div style={{background:'#E2E3E3', padding:'14px', color:'#555'}}>
                                 <small style={{color:'#555'}}>All fields are mandatory</small>
-                                <Form style={{lineHeight:'24px'}}>
-                                <Form.Group className="mb-3">
-                                    <Form.Label>Name</Form.Label>
-                                    <Form.Control name="name" type="text" placeholder="Enter name" />
-                                </Form.Group>
-
-                                <Form.Group className="mb-3">
-                                    <Form.Label>Contact Number</Form.Label>
-                                    <Form.Control name="contact" type="text" placeholder="Contact no" />
-                                </Form.Group>
-                                <Form.Group className="mb-3">
-                                    <Form.Label>Email</Form.Label>
-                                    <Form.Control name="email" type="email" placeholder="Enter email" />
-                                </Form.Group>
-
-                                <Form.Group className="mb-3">
-                                    <Form.Label>City</Form.Label>
-                                    <Form.Control name="contact" type="text" placeholder="City" />
-                                </Form.Group>
-                                <Form.Group className="mb-3">
-                                    <Form.Label>INDos no</Form.Label>
-                                    <Form.Control name="indno" type="text" placeholder="INDos" />
-                                </Form.Group>
-                                <Form.Group className="mb-3">
-                                    <Form.Label>Import your profile</Form.Label>
-                                    <Form.Control name="profile" type="file" placeholder="Profile" />
-                                </Form.Group>
-                                <p style={{color:'#555', fontSize:'12px', lineHeight:'18px'}}>Make completing your job application easier by uploading your resume or CV. Upload either DOC, DOCX, PDF, RTF or TXT file types 4 MB max<br /></p>
-                                <Button variant="primary" type="submit">
-                                    Submit
-                                </Button>
-                                </Form>
+                                <CareerFormNew subject={'Career Query'} />
                             </div>
                         </Col>
                     </Row>
