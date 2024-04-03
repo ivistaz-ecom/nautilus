@@ -14,7 +14,7 @@ function UncontrolledExample() {
           src="/images/4ps_01.jpeg"
           alt="First slide"
           width={640}
-          height={240}
+          height={440}
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -23,7 +23,7 @@ function UncontrolledExample() {
           src="/images/4ps_02.jpeg"
           alt="First slide"
           width={640}
-          height={240}
+          height={440}
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -32,7 +32,7 @@ function UncontrolledExample() {
           src="/images/4ps_03.jpeg"
           alt="Second slide"
           width={640}
-          height={240}
+          height={440}
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -41,7 +41,7 @@ function UncontrolledExample() {
           src="/images/4ps_04.jpeg"
           alt="Second slide"
           width={640}
-          height={240}
+          height={440}
         />
       </Carousel.Item>
     </Carousel>
