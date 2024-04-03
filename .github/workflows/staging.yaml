@@ -16,7 +16,8 @@ jobs:
                 username: ${{ secrets.SSH_USERNAME }} # Your server's username
                 key: ${{ secrets.SSH_KEY }} # Your server's SSH private key
                 passphrase: ${{ secrets.SSH_PASS }} # Your server's SSH password
-      
+                
+                # Run commands
                 script: |
                   cd /var/www/html/nautilusshipping
                   git pull origin main
