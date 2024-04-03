@@ -129,7 +129,7 @@ const ContactForm = ({ subject }) => {
           <Row>
             <Col>
               <div className="mb-3">
-                <input type="text" name="indosNo" className={`form-control ${errors && errors.indosNo ? 'is-invalid' : ''}`} placeholder="Indos no" value={formData.indosNo} onChange={handleChange} />
+                <input type="text" name="indosNo" className={`form-control ${errors && errors.indosNo ? 'is-invalid' : ''}`} placeholder="INDoS no" value={formData.indosNo} onChange={handleChange} />
                 {errors && errors.indosNo && <div className="invalid-feedback">{errors.indosNo}</div>}
               </div>
             </Col>
