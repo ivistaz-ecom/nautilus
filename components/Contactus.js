@@ -22,7 +22,7 @@ function AutoLayoutExample() {
                 </Col>
 <Col className="wbg-main pt-5">
 <Container className="pt-4">
-<p className="text-white">Note: Job Seekers, please visit our shipping job listing page</p>
+<p className="text-white">Note: Job Seekers, please visit our <Link href={'/careers'} style={{textDecoration:'underline', color:'#fff'}}>career job listing page</Link></p>
 <ContactForm/>
 </Container >
                    

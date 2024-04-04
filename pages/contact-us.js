@@ -9,6 +9,7 @@ import configData from "config.json";
 import Head from 'next/head';
 import ContactForm from '../utils/ContactForm'
 import Robots from '../utils/robots'
+import Link from 'next/link';
 
 
 function ContainerExample() {
@@ -53,7 +54,7 @@ function ContainerExample() {
         <p className="fs-1 bogle-bold walmart-default mt-4">Contact Us</p>
         <p>Contact us for Ship Management, Ship Agency & Logistics, Inspection and Commercial Ship Services.
 <br/>Simply fill the form and we will get in touch with you soon.</p>
-<p>Note: Job Seekers, please visit our shipping  job listing page.</p>
+<p>Note: Job Seekers, please visit our <Link href={'/careers'}>career job listing page</Link>.</p>
         </Col>
       </Row> 
 
