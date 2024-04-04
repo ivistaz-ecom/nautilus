@@ -8,7 +8,7 @@ import configData from '../../config.json';
 import { format } from 'date-fns';
 import { useState } from 'react';
 import ContactForm from '../../utils/CareerForm';
-import Robots from '../utils/robots'
+import Robots from '../../utils/robots'
 
 const JobDetail = ({ data }) => {
   const [success, setSuccess] = useState(true);
