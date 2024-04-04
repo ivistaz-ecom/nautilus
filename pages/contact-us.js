@@ -8,7 +8,7 @@ import Office from '../components/ContactOffice';
 import configData from "config.json";
 import Head from 'next/head';
 import ContactForm from '../utils/ContactForm'
-
+import Robots from '../utils/robots'
 
 
 function ContainerExample() {
@@ -16,10 +16,11 @@ function ContainerExample() {
 
   return (
       <>
-          <Head>
+      <Head>
         <title>Contact - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
         <meta name="description" content="Delivering excellence in technical and crew management" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex,nofollow"></meta>
         <link rel="icon" href="/images/favicon.ico" />
         <link rel="canonical" href="https://www.nautilusshipping.com/contact-us" />
         <meta property="og:locale" content="en_US" />
@@ -31,6 +32,7 @@ function ContainerExample() {
         <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <Robots />
       </Head>
     <Header/>
     

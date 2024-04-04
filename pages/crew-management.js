@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Contact from '../components/Contactus';
 import Image from "next/image";
 import Head from 'next/head';
-
+import Robots from '../utils/robots'
 
 const approach = () => {
   return (
@@ -15,6 +15,7 @@ const approach = () => {
 {/* <!-- HTML Meta Tags --> */}
 <title>Crew Management, Ship Crew Recruitment Services | Nautilus Shipping</title>
 <meta name="description" content="We recruit and manage experienced seafarers for Tankers, Bulk carriers, Cruise ships and Offshore vessels. Our full crew management service includes sourcing, recruitment, selection, deployment and scheduling."></meta>
+<meta name="robots" content="noindex,nofollow"></meta>
 {/* <!-- Google / Search Engine Tags --> */}
 <meta itemprop="name" content="Crew Management, Ship Crew Recruitment Services | Nautilus Shipping"></meta>
 <meta itemprop="description" content="We recruit and manage experienced seafarers for Tankers, Bulk carriers, Cruise ships and Offshore vessels. Our full crew management service includes sourcing, recruitment, selection, deployment and scheduling."></meta>
@@ -30,6 +31,7 @@ const approach = () => {
 <meta name="twitter:title" content="Crew Management, Ship Crew Recruitment Services | Nautilus Shipping"></meta>
 <meta name="twitter:description" content="We recruit and manage experienced seafarers for Tankers, Bulk carriers, Cruise ships and Offshore vessels. Our full crew management service includes sourcing, recruitment, selection, deployment and scheduling."></meta>
 <meta name="twitter:image" content=""></meta>
+<Robots />
 </Head> 
 <Header/>
     

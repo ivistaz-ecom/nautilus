@@ -4,6 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Col, Row, Container } from 'react-bootstrap'
 import { RotatingLines } from 'react-loader-spinner'
+import server from '../config.json'
 
 const ContactForm = ({ customTitle  }) => {
     const [formData, setFormData] = useState({
@@ -59,7 +60,7 @@ const ContactForm = ({ customTitle  }) => {
 
         try {
             const response = await axios.post(
-                'https://beta.nautilusshipping.com/wp-json/contact-form-7/v1/contact-forms/8565/feedback',
+                `${server.SERVER_FROM}contact-form-7/v1/contact-forms/8565/feedback`,
                 formData,
                  {
                     headers: {

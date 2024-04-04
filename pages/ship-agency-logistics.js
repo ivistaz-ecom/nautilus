@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Contact from '../components/Contactus'
 import Image from 'next/image';
 import Head from 'next/head';
-
+import Robots from '../utils/robots'
 
 const approach = () => {
   return (
@@ -26,6 +26,7 @@ const approach = () => {
         <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <Robots />
       </Head>
 <Header/>
     

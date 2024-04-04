@@ -8,13 +8,19 @@ config.autoAddCss = false;
 import type { AppProps } from 'next/app'
 import Script from 'next/script';
 import Head from 'next/head';
+import Robots from '../utils/robots'
+
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+
+
   return (
     <>
       <Head>
         {/* Other head elements */}
         <meta name="google-site-verification" content="ximcwDn5nLvnNzaFd5RFKg4kZIsdRpd2fZ5waaTkXZw" />
+        <Robots />
       </Head>
       
       {/* Google Tag Manager */}

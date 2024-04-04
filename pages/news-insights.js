@@ -9,6 +9,7 @@ import { fetchWordPressData } from '../utils/fetchData';
 import { RotatingLines } from 'react-loader-spinner'
 import PostList from '../utils/PostList';
 //import Image from 'next/image';
+import Robots from '../utils/robots'
 
 const SuccessStories = () => {
   const router = useRouter();
@@ -31,6 +32,7 @@ const SuccessStories = () => {
         <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <Robots />
       </Head>
     <div className="wbg-grey">
       <Header />

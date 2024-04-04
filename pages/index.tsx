@@ -6,9 +6,10 @@ import Naut from '../components/Nautilius'
 import Servcies from '../components/OurServices'
 import Contact from '../components/Contactus'
 import Footer from '../components/Footer'
-
+import Robots from '../utils/robots'
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -26,7 +27,9 @@ export default function Home() {
         <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <Robots/>
       </Head>
+      
     
 <Header/>
 <Banner/>

@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Contact from '../components/Contactus'
 import Head from 'next/head';
-
+import Robots from '../utils/robots'
 
 
 const approach = () => {
@@ -30,6 +30,7 @@ const approach = () => {
 <meta name="twitter:title" content="Ship Management - Ship Management Company, Vessel Management Services | Nautilus Shipping"></meta>
 <meta name="twitter:description" content="Nautilus provides complete ship management and Technical Services to global ship owners and operators across the globe. Our technical support services help keep vessels safe and in an ideal condition for operations."></meta>
 <meta name="twitter:image" content=""></meta>
+<Robots />
 </Head> 
 <Header/>
     

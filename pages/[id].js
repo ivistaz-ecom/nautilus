@@ -8,6 +8,7 @@ import Moment from 'react-moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
+import Robots from '../utils/robots'
 
 const post = ({ data }) => {
 
@@ -30,6 +31,7 @@ return (
 <Head key={post.id}>
 {/* <!-- HTML Meta Tags --> */} 
 <title>{post['yoast_head_json']['title']}</title>
+<meta name="robots" content="noindex,nofollow"></meta>
 <meta name="description" content={post['yoast_head_json']['description']}></meta>
 {/* <!-- Google / Search Engine Tags --> */}
 <meta itemprop="name" content={post['yoast_head_json']['title']}></meta>
@@ -46,7 +48,7 @@ return (
 <meta name="twitter:title" content={post['yoast_head_json']['title']}></meta>
 <meta name="twitter:description" content={post['yoast_head_json']['description']}></meta>
 <meta name="twitter:image" content={post['_embedded']['wp:featuredmedia'][0]['source_url']}></meta>
-
+<Robots />
 </Head>      
 
 <Container fluid  className="post-banner" style={{ backgroundImage: `url(${post['_embedded']['wp:featuredmedia'][0]['source_url']})`}}>

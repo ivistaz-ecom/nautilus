@@ -34,7 +34,7 @@ function AutoLayoutExample() {
         <ul className="fs-4 list-unstyled">
                                 <li className="f-text"><Link href="/ship-management/" className={router.pathname == "/ship-management" ? "active" : ""}>Ship Management</Link></li>
                                 <li className="f-text"><Link href="/crew-management/" className={router.pathname == "/crew-management" ? "active" : ""}>Crew Management</Link></li>
-                                <li className="f-text"><Link href="/ship-agency-logistics" className={router.pathname == "/ship-agency-logistics" ? "active" : ""}>Ship Agency & Logistics</Link></li>
+                                {/* <li className="f-text"><Link href="/ship-agency-logistics" className={router.pathname == "/ship-agency-logistics" ? "active" : ""}>Ship Agency & Logistics</Link></li> */}
                                 <li className="f-text"><Link href="/inspection" className={router.pathname == "/inspection" ? "active" : ""}>Inspection</Link></li>
                                 <li className="f-text"><Link href="/commercial-services" className={router.pathname == "/commercial-services" ? "active" : ""}>Commercial Services</Link></li>
                                 

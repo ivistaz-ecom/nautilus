@@ -1,8 +1,16 @@
-# Block all crawlers for /accounts
+
+####live server
+#User-agent: *
+#Disallow: /signature-images
+#User-agent: *
+#allow: /
+
+# staging server
 User-agent: *
-Disallow: /signature-images
+Disallow: /
+Disallow: /cgi-bin/
+Disallow: /signature-images/
+Sitemap: https://staging.nautilusshipping.com/sitemap.xml
 
 
-# Allow all crawlers
-User-agent: *
-allow: /
+

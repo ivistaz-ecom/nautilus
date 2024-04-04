@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Contact from '../components/Contactus'
 import Image from 'next/image';
 import Head from 'next/head';
-
+import Robots from '../utils/robots'
 
 const approach = () => {
   return (
@@ -15,6 +15,7 @@ const approach = () => {
         <title>Inspection - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
         <meta name="description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex,nofollow"></meta>
         <link rel="icon" href="/images/favicon.ico" />
         <link rel="canonical" href="https://www.nautilusshipping.com/" />
         <meta property="og:locale" content="en_US" />
@@ -26,6 +27,7 @@ const approach = () => {
         <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <Robots />
       </Head>
 <Header/>
 

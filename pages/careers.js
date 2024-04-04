@@ -8,6 +8,7 @@ import { format } from 'date-fns'
 import Head from 'next/head'
 import PostList from '../utils/PostListCareer';
 import CareerFormNew from '../utils/CareerFormNew';
+import Robots from '../utils/robots'
 
 const NewCareer = () => {
 
@@ -24,7 +25,7 @@ const NewCareer = () => {
                 {/* <!-- HTML Meta Tags --> */}
                 <title>Current Job Openings - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
                 <meta name="description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
-
+                <meta name="robots" content="noindex,nofollow"></meta>
                 {/* <!-- Google / Search Engine Tags --> */}
                 <meta itemprop="name" content="Current Job Openings - Ship Management Company, Vessel Management Services | Nautilus Shipping"></meta>
                 <meta itemprop="description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
@@ -36,7 +37,7 @@ const NewCareer = () => {
                 <meta property="og:title" content="Current Job Openings - Ship Management Company, Vessel Management Services | Nautilus Shipping"></meta>
                 <meta property="og:description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
                 <meta property="og:image" content=""></meta>
-
+                <Robots />
                 {/* <!-- Twitter Meta Tags --> */}
                 <meta name="twitter:card" content="summary_large_image"></meta>
                 <meta name="twitter:title" content="Current Job Openings - Ship Management Company, Vessel Management Services | Nautilus Shipping"></meta>

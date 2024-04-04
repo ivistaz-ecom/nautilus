@@ -929,3 +929,9 @@ width:50% !important;
 
 
 }
+
+input[type="file"]::-webkit-file-upload-button {
+    background: black;
+    color: red;
+    padding: 1em;
+}

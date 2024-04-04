@@ -53,8 +53,8 @@ function NavScrollExample() {
               <NavDropdown.Divider />
               <NavDropdown.Item><Link href="/crew-management" className="menu">Crew Management</Link></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item><Link href="/ship-agency-logistics" className="menu">Ship Agency & Logistics</Link></NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Item><Link href="/ship-agency-logistics" className="menu">Ship Agency & Logistics</Link></NavDropdown.Item>
+              <NavDropdown.Divider /> */}
               <NavDropdown.Item><Link href="/inspection" className="menu">Inspection</Link></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item> <Link href="/commercial-services" className="menu">Commercial Services</Link></NavDropdown.Item>

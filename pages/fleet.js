@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Image from "next/image";
 import Head from 'next/head';
 import Link from 'next/link';
-
+import Robots from '../utils/robots'
 
 const approach = () => {
   return (
@@ -14,6 +14,7 @@ const approach = () => {
 {/* <!-- HTML Meta Tags --> */}
 <title>Fleet - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
 <meta name="description" content="Minimizing Downtime and Maximizing Revenues for Ship Owners and Operators Operational efficiency and compliance At Nautilus, we endeavor to adhere to the highest industry standards and in compliance with the requisite rules and regulations. We do this by following a comprehensive maintenance program that includes both planned maintenance and regular inspections. We understand the importance"></meta>
+<meta name="robots" content="noindex,nofollow"></meta>
 {/* <!-- Google / Search Engine Tags --> */}
 <meta itemprop="name" content="Fleet - Ship Management Company, Vessel Management Services | Nautilus Shipping"></meta>
 <meta itemprop="description" content="Minimizing Downtime and Maximizing Revenues for Ship Owners and Operators Operational efficiency and compliance At Nautilus, we endeavor to adhere to the highest industry standards and in compliance with the requisite rules and regulations. We do this by following a comprehensive maintenance program that includes both planned maintenance and regular inspections. We understand the importance"></meta>
@@ -29,6 +30,7 @@ const approach = () => {
 <meta name="twitter:title" content="Fleet - Ship Management Company, Vessel Management Services | Nautilus Shipping"></meta>
 <meta name="twitter:description" content="Minimizing Downtime and Maximizing Revenues for Ship Owners and Operators Operational efficiency and compliance At Nautilus, we endeavor to adhere to the highest industry standards and in compliance with the requisite rules and regulations. We do this by following a comprehensive maintenance program that includes both planned maintenance and regular inspections. We understand the importance"></meta>
 <meta name="twitter:image" content=""></meta>
+<Robots />
 </Head>  
 <Header/>
     

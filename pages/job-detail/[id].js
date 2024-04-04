@@ -8,6 +8,7 @@ import configData from '../../config.json';
 import { format } from 'date-fns';
 import { useState } from 'react';
 import ContactForm from '../../utils/CareerForm';
+import Robots from '../utils/robots'
 
 const JobDetail = ({ data }) => {
   const [success, setSuccess] = useState(true);
@@ -69,6 +70,7 @@ const JobDetail = ({ data }) => {
     <>
       <Head>
         <title>{data[0].acf.rank} - Job Detail</title>
+        <Robots/>
       </Head>
       <Header />
       <Container key={data[0].id}>

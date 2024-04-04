@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import { Container } from 'react-bootstrap';
 import configData from "../config.json";
 import Head from 'next/head';
+import Robots from '../utils/robots'
 
 const privacy = ({ data }) => {
     return (
@@ -10,6 +11,7 @@ const privacy = ({ data }) => {
         <Head>
         <title>Disclaimer - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
         <meta name="description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta name="robots" content="noindex,nofollow"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
         <link rel="canonical" href="https://www.nautilusshipping.com/" />
@@ -22,6 +24,7 @@ const privacy = ({ data }) => {
         <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <Robots />
       </Head>
             <Header />
             <Container fluid>

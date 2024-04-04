@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Col, Row, Form } from 'react-bootstrap';
 import { RotatingLines } from 'react-loader-spinner';
+import server from '../config.json'
 
 const ContactForm = ({ subject }) => {
   const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ const ContactForm = ({ subject }) => {
         formDataToSend.append('resume', file);
       }
 
-      const response = await axios.post('https://beta.nautilusshipping.com/wp-json/contact-form-7/v1/contact-forms/9373/feedback',
+      const response = await axios.post(`${server.SERVER_FROM}contact-form-7/v1/contact-forms/9356/feedback`,
         formDataToSend,
         {
           headers: {
@@ -105,7 +106,7 @@ const ContactForm = ({ subject }) => {
           <Row>
             <Col>
               <div className="mb-3">
-                <input type="text" name="contactNo" className={`form-control ${errors && errors.contactNo ? 'is-invalid' : ''}`} placeholder="Contact No" value={formData.contactNo} onChange={handleChange} />
+                <input type="text" name="contactNo" className={`form-control ${errors && errors.contactNo ? 'is-invalid' : ''}`} placeholder="Contact No." value={formData.contactNo} onChange={handleChange} />
                 {errors && errors.contactNo && <div className="invalid-feedback">{errors.contactNo}</div>}
               </div>
             </Col>
@@ -129,7 +130,7 @@ const ContactForm = ({ subject }) => {
           <Row>
             <Col>
               <div className="mb-3">
-                <input type="text" name="indosNo" className={`form-control ${errors && errors.indosNo ? 'is-invalid' : ''}`} placeholder="INDoS no" value={formData.indosNo} onChange={handleChange} />
+                <input type="text" name="indosNo" className={`form-control ${errors && errors.indosNo ? 'is-invalid' : ''}`} placeholder="INDoS No." value={formData.indosNo} onChange={handleChange} />
                 {errors && errors.indosNo && <div className="invalid-feedback">{errors.indosNo}</div>}
               </div>
             </Col>
@@ -137,9 +138,9 @@ const ContactForm = ({ subject }) => {
           <Row>
             <Col sm={12}>
               <Form.Group controlId="formFile" className="mb-3">
-                <Form.Control type="file" onChange={handleFileChange} className="custom-file-input"/>
+                <Form.Control type="file" onChange={handleFileChange} className="custom-file-input" />
               </Form.Group>
-              <p style={{lineHeight:'16px',fontSize:'12px'}}>Make completing your job application easier by uploading your resume or CV. Upload either DOC, DOCX, PDF, RTF or TXT file types 4 MB max</p>
+              <p style={{lineHeight:'16px',fontSize:'12px'}}>Complete your job application by uploading your resume or CV. Upload either DOC, DOCX, PDF, RTF or TXT file types 4 MB max</p>
             </Col>
           </Row>
           <Row>
