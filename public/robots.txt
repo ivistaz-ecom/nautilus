@@ -4,7 +4,7 @@
 #Disallow: /signature-images
 #User-agent: *
 #allow: /
-Sitemap: https://wwww.nautilusshipping.com/sitemap.xml
+Sitemap: https://www.nautilusshipping.com/sitemap.xml
 
 # staging server
 User-agent: *
