@@ -771,7 +771,11 @@ img.logo {
     }
     .mt-48{
         margin-top:33px !important;     
-    }   
+    }
+    .ban-text-career {
+        line-height: 32px;
+        padding-right: 10px;
+    }  
 }
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {

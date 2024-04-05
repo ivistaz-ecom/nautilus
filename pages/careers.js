@@ -48,7 +48,7 @@ const NewCareer = () => {
             <Container fluid style={bannerBackground}>
                 <Row style={{height:'561px'}}>
                     <Col></Col>
-                    <Col className="d-flex flex-column justify-content-center home-banner-career">
+                    <Col md={6} sm={12} className="d-flex flex-column justify-content-center home-banner-career">
                         <h1 className="ban-text-career">India’s fastest growing<br />Ship Management company.</h1>
                         <p>CHENNAI <span style={{color:'#008E9C'}}>&#9679;</span> MUMBAI <span style={{color:'#008E9C'}}>&#9679;</span> BANGALORE <span style={{color:'#008E9C'}}>&#9679;</span> PORT BLAIR <span style={{color:'#008E9C'}}>&#9679;</span> SINGAPORE</p>
                     </Col>
@@ -57,7 +57,7 @@ const NewCareer = () => {
             <Container fluid style={{background:'#EAEBEB',paddingTop:'80px', paddingBottom:'80px'}}>
                 <Container className="ban-text-career">
                     <Row>
-                        <Col style={{paddingRight:'180px'}}>
+                        <Col lg={6} sm={12}>
                             <h2 style={{color:'#555', marginBottom:'20px'}}>Why Join Nautilus Shipping?</h2>
                             <p><span style={{color:"#008E9C"}}>On-time Payments:</span> We prioritize prompt and reliable payments to our seafarers, ensuring financial stability and peace of mind.</p>
                             <p><span style={{color:"#008E9C"}}>Best in the Industry Wages:</span> Competitive wages that are among the best in the industry to ensure we recognize and reward your skills and dedication.</p>
@@ -65,7 +65,7 @@ const NewCareer = () => {
                             <p><span style={{color:"#008E9C"}}>Modern and Expanding Fleet:</span> Join our modern and expanding fleet equipped with cutting-edge technology, offering exciting career opportunities.</p>
                             <p><span style={{color:"#008E9C"}}>Shore Job Opportunities:</span> Explore shore job opportunities and career advancement options within our dynamic organization. Join us for a rewarding career journey at Nautilus Shipping.</p>
                         </Col>
-                        <Col>
+                        <Col lg={6} sm={12}>
                             <p>Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates.</p>
                             <div style={{background:'#E2E3E3', padding:'14px', color:'#555'}}>
                                 <small style={{color:'#555'}}>All fields are mandatory</small>
