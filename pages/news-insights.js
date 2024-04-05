@@ -15,6 +15,18 @@ const SuccessStories = () => {
   const router = useRouter();
   const { categorySlug } = router.query;
 
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "nautilusshipping",
+    "url": "https://www.nautilusshipping.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.nautilusshipping.com/news-insights{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <>
       <Head>
@@ -33,6 +45,10 @@ const SuccessStories = () => {
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <Robots />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          />
       </Head>
     <div className="wbg-grey">
       <Header />

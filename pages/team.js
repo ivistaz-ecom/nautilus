@@ -8,6 +8,17 @@ import Head from 'next/head';
 import Robots from '../utils/robots'
 
 const approach = () => {
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "nautilusshipping",
+    "url": "https://www.nautilusshipping.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.nautilusshipping.com/team{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
   return (
     <>
       <Head>
@@ -26,6 +37,10 @@ const approach = () => {
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <Robots />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
 <Header/>
     

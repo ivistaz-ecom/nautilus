@@ -6,6 +6,18 @@ import Head from 'next/head';
 import Robots from '../utils/robots'
 
 const privacy = ({ data }) => {
+
+    const structuredData = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "nautilusshipping",
+        "url": "https://www.nautilusshipping.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.nautilusshipping.com/privacy-statement{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      };
     return (
         <>
             <Head>
@@ -24,6 +36,10 @@ const privacy = ({ data }) => {
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <Robots />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
             <Header />
             <Container fluid>

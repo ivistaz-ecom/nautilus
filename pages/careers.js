@@ -19,6 +19,18 @@ const NewCareer = () => {
         backgroundSize: 'cover',
     }
 
+    const structuredData = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "nautilusshipping",
+        "url": "https://www.nautilusshipping.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.nautilusshipping.com/careers{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+    };
+
     return (
         <>
             <Head>
@@ -43,6 +55,10 @@ const NewCareer = () => {
                 <meta name="twitter:title" content="Current Job Openings - Ship Management Company, Vessel Management Services | Nautilus Shipping"></meta>
                 <meta name="twitter:description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
                 <meta name="twitter:image" content=""></meta>
+                <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                />
             </Head>
             <Header />
             <Container fluid style={bannerBackground}>

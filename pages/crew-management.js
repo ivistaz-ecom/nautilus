@@ -9,6 +9,19 @@ import Head from 'next/head';
 import Robots from '../utils/robots'
 
 const approach = () => {
+
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "nautilusshipping",
+    "url": "https://www.nautilusshipping.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.nautilusshipping.com/crew-management{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
 <div>
 <Head >
@@ -32,6 +45,10 @@ const approach = () => {
 <meta name="twitter:description" content="We recruit and manage experienced seafarers for Tankers, Bulk carriers, Cruise ships and Offshore vessels. Our full crew management service includes sourcing, recruitment, selection, deployment and scheduling."></meta>
 <meta name="twitter:image" content=""></meta>
 <Robots />
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+  />
 </Head> 
 <Header/>
     

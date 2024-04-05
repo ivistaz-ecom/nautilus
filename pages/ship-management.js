@@ -9,6 +9,18 @@ import Robots from '../utils/robots'
 
 
 const approach = () => {
+
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "nautilusshipping",
+    "url": "https://www.nautilusshipping.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.nautilusshipping.com/ship-management{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
   return (
     <div>
 <Head >
@@ -31,6 +43,10 @@ const approach = () => {
 <meta name="twitter:description" content="Nautilus provides complete ship management and Technical Services to global ship owners and operators across the globe. Our technical support services help keep vessels safe and in an ideal condition for operations."></meta>
 <meta name="twitter:image" content=""></meta>
 <Robots />
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+  />
 </Head> 
 <Header/>
     

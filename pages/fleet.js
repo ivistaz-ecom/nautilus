@@ -8,6 +8,17 @@ import Link from 'next/link';
 import Robots from '../utils/robots'
 
 const approach = () => {
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "nautilusshipping",
+    "url": "https://www.nautilusshipping.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.nautilusshipping.com/fleet{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
   return (
     <div>
 <Head >
@@ -31,6 +42,10 @@ const approach = () => {
 <meta name="twitter:description" content="Minimizing Downtime and Maximizing Revenues for Ship Owners and Operators Operational efficiency and compliance At Nautilus, we endeavor to adhere to the highest industry standards and in compliance with the requisite rules and regulations. We do this by following a comprehensive maintenance program that includes both planned maintenance and regular inspections. We understand the importance"></meta>
 <meta name="twitter:image" content=""></meta>
 <Robots />
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+  />
 </Head>  
 <Header/>
     
